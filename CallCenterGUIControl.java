@@ -60,8 +60,8 @@ public class CallCenterGUIControl {
 
         
         JPanel panelAgentes = new JPanel(new GridLayout(2, 1, 10, 10));
-        JLabel agente1Label = new JLabel("Agente 1 Libre");
-        JLabel agente2Label = new JLabel("Agente 2 Libre");
+        JLabel agente1Label = new JLabel("Agente 1 Libre"); //Hilos
+        JLabel agente2Label = new JLabel("Agente 2 Libre"); //Hilos
         panelAgentes.setBorder(BorderFactory.createTitledBorder("Agentes"));
         panelAgentes.add(agente1Label);
         panelAgentes.add(agente2Label);
@@ -132,3 +132,4 @@ public class CallCenterGUIControl {
         new Thread(new Agente("Agente 2", cola, agente2Label)).start();
     }
 }
+
