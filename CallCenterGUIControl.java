@@ -129,7 +129,8 @@ public class CallCenterGUIControl {
 
 
         new Thread(new Agente("Agente 1", cola, agente1Label)).start();
-        new Thread(new Agente("Agente 2", cola, agente2Label)).start();
+        new Thread(new Agente("Agente 2", cola, agente2Label)).start(); //hilos
     }
 }
+
 
